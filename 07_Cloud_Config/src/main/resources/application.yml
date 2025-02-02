@@ -1,0 +1,11 @@
+spring:
+    application:
+        name: 07_Cloud_Config
+    cloud:
+      config:
+        server:
+          git:
+            uri: https://github.com/sivaji-Kadapala/configuration_properties.git
+server:
+  port: 9093
+

@@ -1,0 +1,13 @@
+2. Fix Windows DNS Issue
+Windows sometimes cannot resolve mshome.net, especially in a local development environment.
+
+🔹 Solution: Add Entry to Hosts File
+Open Notepad as Administrator.
+Open the file:
+makefile
+
+C:\Windows\System32\drivers\etc\hosts
+Add this line at the end:
+
+127.0.0.1   DESKTOP-N7FVPDL.mshome.net
+Save the file and restart your services.

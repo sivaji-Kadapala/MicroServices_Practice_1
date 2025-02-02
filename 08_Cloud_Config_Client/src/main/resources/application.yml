@@ -1,0 +1,13 @@
+#spring:
+#    application:
+#        name: 08_Cloud_Config_Client
+spring:
+    application:
+        name: greet
+    config:
+      import: optional:configserver:http://localhost:9093
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
